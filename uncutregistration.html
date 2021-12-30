@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+    <title>Registration Bio Data Form</title>
+    </head>
+    <body style="background-color:#CCFFCC">
+     
+    <h1 align="center"><img src="./images/unCUTEofficiallogo.png" style="width:200px"></h1>
+    <center><b><h2>unCUT-ENTERTAINMENT</h2></b></center>
+    <br><br>
+    
+    <form action="thank.html" >
+    <span style="display:inline-block; width: 495;"></span>
+    Name:
+    <input type="text" required placeholder="Enter your name">
+    <br><br>
+    <span style="display:inline-block; width: 500;"></span>
+    DOB:
+    <input type="date">
+    <br><br>
+    <span style="display:inline-block; width: 506;"></span>
+    Sex: 
+    <input type="radio" name="r1">Male
+    <br>
+    <span style="display:inline-block; width: 39;"></span>
+    <span style="display:inline-block; width: 500;"></span><input type="radio" name="r1">Female
+    <br><br>
+    <span style="display:inline-block; width: 494;"></span>
+    Email:
+    
+      <input type="email" id="email" name="email"><br><br>
+    
+    <span style="display:inline-block; width: 481;"></span>
+    
+    
+    Address: <textarea required placeholder="Enter your address">
+    </textarea>
+    <br><br>
+    <span style="display:inline-block; width: 480;"></span>
+    Department:
+    <select name="Department">
+    <option value=""></option>
+    <option value="Student">Student</option>
+    <option value="Professional">Professional</option>
+    </select>
+    <br><br>
+    <span style="display:inline-block; width: 475;"></span>
+    
+    Mobile Number:
+    <input type="tel">
+    <br><br>
+    <span style="display:inline-block; width: 478;"></span>
+    
+    Password:
+    <input type="password" value="" id="myInput">
+    <input type="checkbox" onclick="myFunction()">Show Password
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+    <br><br>
+    <span style="display:inline-block; width: 470;"></span>
+    
+    
+    <center>
+    <button type="submit" value="Submit">Submit</button>
+    <button type="reset" value="Reset">Reset</button>
+    </center>
+    </form>
+    </body>
+    </html>

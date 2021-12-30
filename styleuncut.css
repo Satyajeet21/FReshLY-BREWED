@@ -1,0 +1,90 @@
+body{
+	margin: 0px;
+	font-family: 'arial';
+	width: 96%;
+	padding-left:2%;
+	padding-right:2%;
+	position: relative;
+	padding-bottom: 1800px;
+	min-height: 150vh;
+	
+} 
+
+
+header{
+	/*background colour for header*/
+	  background: #CCFFCC;
+	
+	/*text colour for header*/
+	color: black;
+	
+	  font-size: 25px;
+  
+  
+	/*Centering the text*/
+	text-align: center;
+	
+	
+	
+	/*Adding some spacing*/
+	padding:5%;
+}
+
+
+.blue{
+	color: #30ACEC;
+}
+
+#unique{
+	color:purple;
+}
+
+nav{
+	background-color:#CCFFCC;
+	/*General positioning stuff. */
+	line-height:30px;
+	height:220%;
+	width:20%;
+	float:left;
+	padding:8px;
+}
+
+a{
+	/*Overwrites the default underline and color on links*/
+	text-decoration:none;
+	color: #404040;
+	font-weight: bold;
+}
+
+a:hover{
+	/*Changes the colour when links are hovered over with the mouse*/
+	color: rgb(253, 30, 30);
+}
+
+ul{
+	/*Text colour for everything inside of a section*/
+	list-style: none;
+	padding-left: 5px;
+}
+
+section{
+	color: #404040;
+	
+	width: 65%;
+	float: left;
+	
+	padding:5px 50px 0px 50px;
+}
+
+
+footer{
+	text-align: center;
+	background-color: powderblue;
+	color: rgb(28, 11, 68);
+	padding: 30px;
+    position: absolute;
+	bottom: 0;
+	width: 92%;
+	
+	/*z-index: 1;*/
+}
