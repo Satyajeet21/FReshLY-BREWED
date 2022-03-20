@@ -40,7 +40,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    background:url(../images/pexels.jpg) no-repeat;
     background-size: cover;
 
     background-attachment: fixed;
@@ -52,128 +51,38 @@ body {
     padding: 30px;
     margin-top: 80px;
     background-position: center;
-	height:65vh;
 	width: 55%;
+    height:81vh;
 	box-shadow: 0px 0px 10px #AEC6CF;
+    border-radius: 5px;
+    border: solid #529ac0 1px;
 }
 
-.form{
-
-width: 100%;
-margin-top: 20px;
-font-size:20px;
-
+.heading{
+    height: 75px;
 }
-
 .form text-area{
 
 resize: vertical;
 
 }
 
-.login-form{
-    height:100%;
-    width:100%;
-    position: fixed;
-    top:-120%; left: 0;
-    z-index: 1000;
-    background:rgba(0,0,0,.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-form.popup{
-    top:0;
-}
-
-.login-form form{
-    width:35rem;
-    background:#fff;
-    margin:0 2rem;
-    padding:1rem 3rem;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem #333;
-    position: relative;
-}
-
-.login-form form h3{
-    font-size: 3rem;
-    color:#2658fc;
-    padding:1rem 0;
-}
-
-.login-form form .box{
-    width:100%;
-    padding:1rem 0;
-    margin:1rem 0;
-    border-bottom: .2rem solid #666;
-    font-size: 1.6rem;
-    color:#333;
-    text-transform: none;
-}
-
-.login-form form .box::placeholder{
-    text-transform: capitalize;
-}
-
-.login-form form .box:focus{
-    border-color: #7ff312;
-}
-
-.login-form form .box:nth-child(3){
-    margin-bottom: 5rem;
-}
-
-.login-form form p{
-    font-size: 1.4rem;
-    color:#666;
-    padding:.5rem 0;
-}
-
-.login-form form p a{
-    color:#1261f3;
-}
-
-.login-form form .btn{
-    width: 100%;
-    margin:2rem 0;
-}
-
-.login-form form .btn:hover{
-    background:#444;
-}
-
-.login-form form .fa-times{
-    position: absolute;
-    top:1.5rem; right:2rem;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color:#999;
-}
-
-.login-form form .fa-times:hover{
-    color:#444;
-}
-
-/* Form */
-.container{
-	  padding: 20px;
-	height:65vh;
-	width: 50%;
-	box-shadow: 0px 0px 10px #AEC6CF;
-}
 
 .form{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
 
-width: 100%;
-margin-top: 20px;
-font-size: 2.0 rem;
+}
 
+.sub-fin{
+    border: none;
 }
 
 .container .heading{
-    color:rgb(12, 12, 12);
+    color:rgb(29, 29, 29);
     box-shadow: 0px 0px 10px #585b5c;
 }
 
@@ -201,93 +110,81 @@ button[type="reset"]{
 	
 }
 
-
-
-
 </style>
 
 </head>
 
+
 <body>
 
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.svg"  style="width:32px;height:37px;">
+        <span style="width:8px;display:inline-block"></span> Freshly Brewed</a>
+    </header>
+
     
-<header>
+<div class="container">
+        <h1 class="heading">Register</h1>
 
-<a href="index.html" class="logo"><img src="images/logo.svg"  style="width:32px;height:37px;">
-    <span style="width:8px;display:inline-block"></span> Freshly Brewed</a>
-
-<div id="login" class="fas fa-user-circle"></div></div>
-
-
-
-</header>
-
-<div class="login-form">
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" placeholder="username" class="box" >
-        <input type="password" placeholder="password" class="box">
-        <input type="submit" class="btn" value="login">
-        <i class="fas fa-times"></i>
-    </form>
-
-</div>
-   
-    
-    <div class="container">
-        <h1 class="heading">Sign Up</h1>
-
-        <form action="index.html" >
+<form action="index.html" >
             
     <div class="form">
-
-        <br>
-    Name:
-    <input type="text" required placeholder="Enter your name"  style="font-size:15pt;" >
+    FirstName:
+    <input type="text" required placeholder=""  >
     <br>
     </div>
+
+    <div class="form">
+    LastName:
+    <input type="text" required placeholder=""  >
+    <br>
+    </div>
+
+    <div class="form">
+        UserName:
+        <input type="text" required placeholder=""   >
+        <br>
+        </div>
+    <div class="form">
+            Password:
+            <input type="password" name="password" />
+            <br>
+    </div>
     
+    <div class="form">
+        Address:
+    <input type="text" name="address" />
+        </div>
+
     <div class="form">
     Email:
-      <input type="email" id="email"  name="email" style="font-size:15pt;"><br>
+      <input type="email" id="email"  placeholder="" name="email"><br>
     </div>
+    
     
     <div class="form">
-    Profile:
-    <select name="Department">
-    <option value=""></option>
-    <option value="Student">Student</option>
-    <option value="Professional">Influencer</option>
-    </select>
-    <br>
+    Contact No:
+    <input type="text" name="contact" required placeholder="" />
     </div>
-    
-    <div class="form">
-    Message: <textarea required placeholder=" " style="font-size:15pt;">
-    </textarea>
-    <br>
-    </div>
-    
-    <div class="form">
-    Mobile Number:
-    <input type="tel" style="font-size:15pt;">
-    <br><br>
-    </div>
-    
+
+    <div class="form" style="border: none;">
+        </div>
+
+    <div class="sub-fin">
     <center>
     <button type="reset" value="Reset">Reset</button>
     <button type="submit" value="Submit">Submit</button>
     
     </center>
-    </form>
+    </div>
+</form>
                 
-        </div>
+</div>
 
-        <!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<br>
+<h4 class="credit">
+    Copyright &copy; 2021, FR'eshLY BREWED</h4>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
 </body>
+
 </html>
